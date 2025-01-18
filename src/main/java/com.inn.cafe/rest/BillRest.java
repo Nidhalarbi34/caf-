@@ -12,6 +12,7 @@ public interface BillRest {
     @PostMapping(path = "/generateReport")
     public ResponseEntity<String> generateReport(@RequestBody Map<String, Object> requestMap);
 
+
     @GetMapping(path = "/getBills")
     public ResponseEntity<List<Bill>> getBills();
 
