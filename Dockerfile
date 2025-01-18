@@ -8,7 +8,6 @@ WORKDIR /app
 
 # Copy the jar and necessary resources into the container
 COPY target/*.jar /app/cafe.jar
-COPY src/main/resources/serviceAccountKey.json /app/src/main/resources/serviceAccountKey.json
 
 # Change ownership of the files
 RUN chown appuser:appgroup /app/cafe.jar
